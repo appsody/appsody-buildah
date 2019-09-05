@@ -1,0 +1,11 @@
+language: bash
+os:
+- linux
+services:
+- docker
+deploy:
+  on:
+    branch: master
+    tags: true
+  provider: script
+  script: bash ./build.sh $CLI_VERSION $TRAVIS_TAG
