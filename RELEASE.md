@@ -11,6 +11,6 @@ We anticipate that this asset will be release rarely - only when issues warrant 
 
 # Dependencies
 
-This asset uses the Ubuntu (Debian) installer package of the Appsody CLI, which is produced by the Appsody CLI build process. That package is referenced by the `Dockerfile` contained in this repo and it is currently set to consume a specific release of the Appsody CLI. This release is configuresd as a Travis environment variable.
+This asset uses the RPM installer package of the Appsody CLI, which is produced by the Appsody CLI build process. That package is referenced by the `Dockerfile` contained in this repo and it is currently set to consume a specific release of the Appsody CLI. This release is configuresd as a Travis environment variable.
 
 If significant changes to the `appsody extract` command are introduced by a CLI release, this asset should be rebuilt referencing a newer version of the CLI.
