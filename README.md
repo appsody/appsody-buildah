@@ -1,6 +1,6 @@
 # Appsody in Buildah
 
-A builder for the `appsody/appsody-docker` Docker image, which is the `quay.io/buildah/stable` image with the Appsody CLI added to it. The image can be used within a build pipeline - such as a Tekton pipeline - to perform actions using the Appsody CLI.
+A builder for the `appsody/appsody-buildah` Docker image, which is the `quay.io/buildah/stable` image with the Appsody CLI added to it. The image can be used within a build pipeline - such as a Tekton pipeline - to perform actions using the Appsody CLI.
 
 At present, the image is equipped with a script (`extract.sh`) that runs the `appsody extract` command, after mounting the appropriate project source directory. The script assumes that the image is running within a container in a Tekton pipeline.
 
@@ -8,7 +8,7 @@ At present, the image is equipped with a script (`extract.sh`) that runs the `ap
 This repo includes a `.travis.yml` file that builds and pushes the image to Docker Hub. However, if you prefer building the image manually, issue the following command:
 
 ```sh
-docker build -t appsody-docker -f Dockerfile .
+docker build -t appsody-buildah -f Dockerfile .
 ```
 
 ### Using the image
