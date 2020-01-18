@@ -1,6 +1,4 @@
-# Latest buildah is buggy use v1.9.0 until this is resolved:
-# https://github.com/containers/buildah/issues/1821
-FROM quay.io/buildah/stable:v1.9.0
+FROM quay.io/buildah/stable:latest
 COPY extract.sh .
 RUN yum -y install wget
 # Matching appsody binary does not exist in upstream.
