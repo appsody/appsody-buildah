@@ -17,3 +17,14 @@ An example of usage is provided by the [Appsody Tekton pipeline example](https:/
 In that context, the image runs the `appsody extract` command to retrieve the entire project tree from the Appsody stack image and the application source tree hosted on GitHub.
 
 This image could be modified to run additional `appsody` commands if necessary.
+
+### Running the image locally in interactive mode
+If you prefer to run the image manually in interactive mode, issue the following command: 
+
+```sh
+docker run -it --privileged -v containers:/var/lib/containers <image-id> bash
+```
+
+This can be useful when testing the appsody cli with buildah, by running `appsody` commands with the `--buildah` flag inside the running container.
+
+
