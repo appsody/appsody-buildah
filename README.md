@@ -12,7 +12,7 @@ docker build -t appsody-buildah -f Dockerfile .
 ```
 
 ### Using the image
-An example of usage is provided by the [Appsody Tekton pipeline example](https://github.com/appsody/tekton-example). Check out the [Appsody build task](https://github.com/appsody/tekton-example/blob/master/appsody-build-task.yaml) manifest. 
+An example of usage is provided by the [Appsody Tekton pipeline example](https://github.com/appsody/tekton-example). Check out the [Appsody build task](https://github.com/appsody/tekton-example/blob/master/appsody-build-push-deploy.yaml) manifest. 
 
 In that context, the image runs the `appsody extract` command to retrieve the entire project tree from the Appsody stack image and the application source tree hosted on GitHub.
 
