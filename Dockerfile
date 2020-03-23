@@ -3,6 +3,7 @@
 FROM quay.io/buildah/stable:v1.9.0
 COPY extract.sh .
 RUN yum -y install wget
+RUN yum -y install git
 # Matching appsody binary does not exist in upstream.
 # Provide the proper version once it is available.
 ARG CLI_VERSION
